@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <EditText
+        android:id="@+id/editDist"
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Meters"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textDist"
+        app:layout_constraintStart_toEndOf="@+id/textDist" />
+
+    <TextView
+        android:id="@+id/textFrom"
+        android:layout_width="89dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="From :"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="From :" />
+
+    <TextView
+        android:id="@+id/textLat"
+        android:layout_width="89dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Lat    :"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textKeyword"
+        tools:text="Lat    :" />
+
+    <TextView
+        android:id="@+id/textLong"
+        android:layout_width="89dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Long :"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLat"
+        tools:text="Long :" />
+
+    <TextView
+        android:id="@+id/textDist"
+        android:layout_width="89dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Dist :"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLong"
+        tools:text="Dist :" />
+
+    <TextView
+        android:id="@+id/textTo"
+        android:layout_width="89dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="To     :"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFrom"
+        tools:text="To     :" />
+
+    <TextView
+        android:id="@+id/textKeyword"
+        android:layout_width="143dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Keyword :"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTo"
+        tools:text="Keyword :" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="go"
+        android:text="Go"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="cancel"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editFrom"
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="yyyyMMddHHmmss"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textFrom"
+        app:layout_constraintStart_toEndOf="@+id/textFrom" />
+
+    <EditText
+        android:id="@+id/editLat"
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Decimal Degrees"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textLat"
+        app:layout_constraintStart_toEndOf="@+id/textLat" />
+
+    <EditText
+        android:id="@+id/editLong"
+        android:layout_width="238dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Decimal Degrees"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textLong"
+        app:layout_constraintStart_toEndOf="@+id/textLong" />
+
+    <EditText
+        android:id="@+id/editTo"
+        android:layout_width="240dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="yyyyMMddHHmmss"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textTo"
+        app:layout_constraintStart_toEndOf="@+id/textTo" />
+
+    <EditText
+        android:id="@+id/editKeyword"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Photo Caption"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textKeyword"
+        app:layout_constraintStart_toEndOf="@+id/textKeyword" />
+
+</android.support.constraint.ConstraintLayout>
